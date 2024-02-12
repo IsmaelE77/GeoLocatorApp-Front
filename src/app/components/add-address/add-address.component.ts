@@ -1,4 +1,4 @@
-import { Component ,Output, EventEmitter} from '@angular/core';
+import { Component ,Output,Input, EventEmitter} from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators} from '@angular/forms';
 import {NgIf} from '@angular/common'
 import { Request } from '../../request';
@@ -14,6 +14,9 @@ import { Request } from '../../request';
 export class AddAddressComponent {
 
   @Output() sendRequest : EventEmitter<Request> = new EventEmitter()
+
+  @Input() isLoading: boolean = false;
+
 
   applyForm = new FormGroup({
     street: new FormControl('', Validators.required), 

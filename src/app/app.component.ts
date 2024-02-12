@@ -20,8 +20,11 @@ import { NgIf } from '@angular/common'
 export class AppComponent {
     address : Address
     errorMessage: string;
+    isLoading: boolean = false;
+
     constructor(private addressService : AddressService){}
     sendRequest(request: Request){
+      this.isLoading=true
       this.addressService.postAddress(request)
       .subscribe(address => {
         if (address) {
@@ -29,6 +32,7 @@ export class AppComponent {
         } else {
           this.errorMessage = 'Address not found'; // Set an error message
         }
+        this.isLoading=false
       });
     }
 }

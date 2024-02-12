@@ -7,7 +7,6 @@ form {
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
-
 }
 
 .form-control {
@@ -62,7 +61,7 @@ button {
   display: block;
   width: 100%;
   padding: 10px;
-  background-color: #4CAF50; /* Adjust color */
+  background-color: #4c53af; /* Adjust color */
   color: white;
   border: none;
   border-radius: 9px;
@@ -71,13 +70,18 @@ button {
 }
 
 button:hover {
-  background-color: #449A44; /* Adjust hover color */
+  background-color: #3b00eb; /* Adjust hover color */
 }
 
 .error {
   border: 1px solid red;
 }
 
+.disabled-button {
+  background-color: gray; /* Change this to the color you prefer */
+  color: white; /* Change this to the text color you prefer */
+  cursor: not-allowed;
+}
 
 /* Media queries for responsiveness */
 

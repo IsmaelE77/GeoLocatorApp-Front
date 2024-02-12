@@ -38,5 +38,5 @@
       <label for="sendByEmail">send address to email:</label>
       <input type="checkbox" id="sendByEmail" name="sendByEmail" formControlName="sendByEmail">
     </div>
-    <button type="submit">Submit</button>
+    <button type="submit" [disabled]="isLoading"  [class.disabled-button]="isLoading">Submit</button>
   </form>

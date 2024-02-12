@@ -10,7 +10,7 @@ import { catchError } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class AddressService {
-  private apiUrl = 'http://localhost:8080/api/v1/address'
+  private apiUrl = 'https://geolocator-app-nfcj.onrender.com/api/v1/address'
   constructor(private http:HttpClient) { }
 
   postAddress(request: Request): Observable<Address | null> {

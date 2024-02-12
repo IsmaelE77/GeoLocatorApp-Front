@@ -7,15 +7,20 @@
 }
 
 body {
+  background-color: #ffffff;
+  background-image: radial-gradient(#000000 2px, #ffffff 2px);
+  background-size: 40px 40px;
+  background-position: 0 0,27px 27px;
   font-family: "Poppins", sans-serif;
 }
 
 .container {
+  background-color:rgb(247, 253, 252);
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
   min-height: 300px;
-  border: 1px solid steelblue;
+  border: 1px solid rgb(1, 53, 96);
   padding: 30px;
   border-radius: 5px;
 }
