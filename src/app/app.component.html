@@ -1,0 +1,8 @@
+<div class="container">
+    <app-header></app-header>
+    <app-add-address *ngIf="!address" (sendRequest)="sendRequest($event)"></app-add-address>
+    <app-address *ngIf="address" [address]="address"></app-address>
+    <div class="error-message" *ngIf="errorMessage">
+        <p>{{ errorMessage }} please try again</p>
+      </div>
+</div>
